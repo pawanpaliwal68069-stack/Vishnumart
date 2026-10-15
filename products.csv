@@ -1,0 +1,107 @@
+id,name,brand,group,sub,emoji,mrp,rate,note,photo,active
+p0001,Gokul Cow's Ghee,Gokul,Ghee & Tel,Ghee,🧈,0,0,"Agmark, jar",,yes
+p0002,Krishna Ghee,Krishna,Ghee & Tel,Ghee,🧈,0,0,"Agmark, box",,yes
+p0003,Krishna Premium Danedar Desi Ghee,Krishna,Ghee & Tel,Ghee,🧈,0,0,Box,,yes
+p0004,Saras Shuddh Ghee 1L,Saras,Ghee & Tel,Ghee,🧈,0,0,"Agmark, box",,yes
+p0005,Vastu Cow Ghee,Vastu,Ghee & Tel,Ghee,🧈,0,0,"Agmark, jar",,yes
+p0006,Amul Ghee,Amul,Ghee & Tel,Ghee,🧈,0,0,Pouch,,yes
+p0007,Oleev Active Multi-Source Oil 1L,Oleev,Ghee & Tel,Edible Oil,🫗,0,0,Pouch,,yes
+p0008,Oleev Active Multi-Source Oil 5L,Oleev,Ghee & Tel,Edible Oil,🫗,0,0,Jar,,yes
+p0009,Oleev Kitchen Olive Pomace Oil 1L,Oleev,Ghee & Tel,Edible Oil,🫗,0,0,Bottle,,yes
+p0010,SaptaShakti Sesame Oil,Pitambari,Ghee & Tel,Edible Oil,🫗,0,0,"200ml, 500ml, 1L",,yes
+p0011,Fortune Oil,Fortune,Ghee & Tel,Edible Oil,🫗,0,0,Pack size batayein,,yes
+p0012,Mahakosh Mustard Oil,Mahakosh,Ghee & Tel,Edible Oil,🫗,0,0,Pack size batayein,,yes
+p0013,Oleev Kitchen Pasta Penne 400g,Oleev,Masale & Chai,Pasta,🍝,0,0,,,yes
+p0014,Ramdev Mirch Powder,Ramdev,Masale & Chai,Masale,🌶️,0,0,"100g, 200g, 500g, 1kg, 5kg",,yes
+p0015,Ramdev Dhaniya Powder,Ramdev,Masale & Chai,Masale,🌶️,0,0,"100g, 200g, 500g, 1kg, 5kg",,yes
+p0016,Ramdev Haldi Powder,Ramdev,Masale & Chai,Masale,🌶️,0,0,"100g, 200g, 500g, 1kg, 5kg",,yes
+p0017,Ramdev Achar Masala,Ramdev,Masale & Chai,Masale,🌶️,0,0,"100g, 200g, 500g",,yes
+p0018,Ramdev Red Gold Kashmiri Chilli,Ramdev,Masale & Chai,Masale,🌶️,0,0,"50g, 100g",,yes
+p0019,Ramdev Garam Masala,Ramdev,Masale & Chai,Masale,🌶️,0,0,"100g, 200g, 500g",,yes
+p0020,Ramdev Strong Hing,Ramdev,Masale & Chai,Hing,🧂,0,0,"10g, 25g, 50g, 100g, 250g",,yes
+p0021,Ramdev Hing Super,Ramdev,Masale & Chai,Hing,🧂,0,0,"10g, 25g, 50g, 100g, 250g",,yes
+p0022,Real Taste Masala Chai,Rungta's,Masale & Chai,Chai,🍵,0,0,"₹10, ₹20 pouch",,yes
+p0023,Real Taste Elaichi Tea,Rungta's,Masale & Chai,Chai,🍵,0,0,"₹10, ₹20 pouch",,yes
+p0024,Real Gold Tea,Rungta's,Masale & Chai,Chai,🍵,0,0,"250g, 500g, 1kg",,yes
+p0025,Dhamaka Tea,Rungta's,Masale & Chai,Chai,🍵,0,0,"250g, 500g, 1kg",,yes
+p0026,Dyna Premium Beauty Soap,Dyna,Soap & Wash,Soap,🧼,0,0,"100g, 125g",,yes
+p0027,JO Glycerine Soap,Wipro JO,Soap & Wash,Soap,🧼,0,0,"125g x4, 100g x5, 48g x5, 36g x5, 55g, 25g",,yes
+p0028,Doy Soap,Wipro Doy,Soap & Wash,Soap,🧼,0,0,125g x3,,yes
+p0029,Santoor Soap Sandal & Turmeric,Wipro Santoor,Soap & Wash,Soap,🧼,0,0,"52g, 75g, 100g x4, 150g x3",,yes
+p0030,Santoor Aloe Fresh Soap,Wipro Santoor,Soap & Wash,Soap,🧼,0,0,100g x4,,yes
+p0031,Santoor Sandal & Almond Milk Soap,Wipro Santoor,Soap & Wash,Soap,🧼,0,0,100g x4,,yes
+p0032,Santoor Handy Hand Wash,Wipro Santoor,Soap & Wash,Hand Wash,🧴,10,10,Sachet,,yes
+p0033,Santoor Hand Wash,Wipro Santoor,Soap & Wash,Hand Wash,🧴,0,0,200ml (1+1),,yes
+p0034,Santoor Hand Wash Refill,Wipro Santoor,Soap & Wash,Hand Wash,🧴,0,0,675ml pouch,,yes
+p0035,Safe Wash Woolens Liquid,Wipro,Soap & Wash,Detergent,🧺,0,0,"60g, 1kg pouch",,yes
+p0036,Safe Wash Liquid Detergent 1kg,Wipro,Soap & Wash,Detergent,🧺,0,0,Bottle + 700g Hand Wash free,,yes
+p0037,Giffy Dishwash Gel,Wipro,Soap & Wash,Detergent,🧺,15,15,Super value pack,,yes
+p0038,Pitambari Dishwash Bar,Pitambari,Soap & Wash,Detergent,🧺,0,0,200g x3,,yes
+p0039,Pitambari Shining Powder,Pitambari,Soap & Wash,Detergent,🧺,0,0,"50g, 150g, 1kg",,yes
+p0040,Bellar Toilet Cleaner 500ml,Bellar,Soap & Wash,Cleaners,🧽,99,99,,,yes
+p0041,Bellar Phenyl Yellow,Bellar,Soap & Wash,Cleaners,🧽,45,45,,,yes
+p0042,Bellar Phenyl White,Bellar,Soap & Wash,Cleaners,🧽,30,30,,,yes
+p0043,Max Kleen Floor Cleaner,Wipro,Soap & Wash,Cleaners,🧽,0,0,"500ml, 1L",,yes
+p0044,Pitambari Drain Cleaner,Pitambari,Soap & Wash,Cleaners,🧽,0,0,50g,,yes
+p0045,Pitambari Sanit All Toilet Cleaner,Pitambari,Soap & Wash,Cleaners,🧽,0,0,500ml,,yes
+p0046,Bellar Gold Scrubber,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,15,15,Steel,,yes
+p0047,Seenk Jhadu,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,45,45,,,yes
+p0048,Phool Jhadu Royal,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,75,75,,,yes
+p0049,Phool Jhadu Advance,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,90,90,,,yes
+p0050,Phool Jhadu Steel,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,90,90,,,yes
+p0051,Phool Jhadu Ultra,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,95,95,,,yes
+p0052,Phool Jhadu Smart,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,115,115,,,yes
+p0053,Phool Jhadu Prime,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,120,120,,,yes
+p0054,Bellar Wiper,Bellar,Soap & Wash,Jhadu & Scrubber,🧹,80,80,,,yes
+p0055,Giffy Steel Scrubber,Wipro Giffy,Soap & Wash,Jhadu & Scrubber,🧹,15,15,,,yes
+p0056,Arnica Amla Herbal Shampoo,Pal Vaidik,Personal Care,Hair Care,💆,0,0,"300ml, 500ml, 1L",,yes
+p0057,Neem Shikakai Shampoo,Pal Vaidik,Personal Care,Hair Care,💆,0,0,"300ml, 500ml, 1L",,yes
+p0058,Amla Kesh Tel,Pal Vaidik,Personal Care,Hair Care,💆,0,0,"500ml, 1L",,yes
+p0059,Chameli Kesh Tel,Pal Vaidik,Personal Care,Hair Care,💆,0,0,35ml to 1L,,yes
+p0060,Jasmine Hair Oil,Pal Vaidik,Personal Care,Hair Care,💆,0,0,"100ml, 200ml, 500ml",,yes
+p0061,Almond Hair Oil,Pal Vaidik,Personal Care,Hair Care,💆,0,0,500ml,,yes
+p0062,Coconut Oil,Pal Vaidik,Personal Care,Hair Care,💆,0,0,"100ml, 200ml, 500ml",,yes
+p0063,Honey & Almonds Body Lotion,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,"20g, 100g, 150g to 900g",,yes
+p0064,Massage Cream,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,16g to 800g,,yes
+p0065,Petroleum Jelly,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,25g to 500g,,yes
+p0066,Lip Guard,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,20ml,,yes
+p0067,Glycerin,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,"50g, 100g, 200g",,yes
+p0068,Gulab Jal,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,"60ml to 1L, plain/spray",,yes
+p0069,"Herbal Powder (Reetha, Amla, Triphala, Multani)",Pal Vaidik,Personal Care,Skin Care,🧴,0,0,150g,,yes
+p0070,Talcum Powder,Pal Vaidik,Personal Care,Skin Care,🧴,0,0,100g,,yes
+p0071,Ajay Toothbrush TB-101,Ajay,Personal Care,Oral Care,🪥,22,22,,,yes
+p0072,Ajay Toothbrush TB-104,Ajay,Personal Care,Oral Care,🪥,11,11,,,yes
+p0073,Ajay Baby Brush TB-105,Ajay,Personal Care,Oral Care,🪥,18,18,,,yes
+p0074,Ajay Baby Brush TB-103,Ajay,Personal Care,Oral Care,🪥,20,20,,,yes
+p0075,Ajay Toothbrush TB-107,Ajay,Personal Care,Oral Care,🪥,20,20,,,yes
+p0076,Ajay Toothbrush TB-108,Ajay,Personal Care,Oral Care,🪥,25,25,,,yes
+p0077,Ajay Toothbrush TB-109,Ajay,Personal Care,Oral Care,🪥,40,40,,,yes
+p0078,Ajay Shaving Brush SB-231,Ajay,Personal Care,Shaving,🪒,40,40,,,yes
+p0079,Ajay Shaving Brush SB-251,Ajay,Personal Care,Shaving,🪒,55,55,,,yes
+p0080,Vi-John Shaving Cream,Vi-John,Personal Care,Shaving,🪒,0,0,"30g, 125g",,yes
+p0081,Splash After Shave Lotion,Vi-John,Personal Care,Shaving,🪒,0,0,"50ml, 100ml",,yes
+p0082,Charbhuja Agarbatti Box,Charbhuja,Pooja,Agarbatti,🪔,25,25,,,yes
+p0083,Charbhuja Agarbatti Pack,Charbhuja,Pooja,Agarbatti,🪔,15,15,,,yes
+p0084,Dry Sticks (10 sticks),Charbhuja,Pooja,Agarbatti,🪔,15,15,,,yes
+p0085,Dry Sticks Jar 100g,Charbhuja,Pooja,Agarbatti,🪔,79,79,,,yes
+p0086,Agarbatti Box 70-90g,Charbhuja,Pooja,Agarbatti,🪔,85,85,,,yes
+p0087,Agarbatti Zipper 110-170g,Charbhuja,Pooja,Agarbatti,🪔,85,85,,,yes
+p0088,Agarbatti Zipper 300-350g,Charbhuja,Pooja,Agarbatti,🪔,130,130,,,yes
+p0089,Agarbatti Zipper 700g,Charbhuja,Pooja,Agarbatti,🪔,260,260,,,yes
+p0090,Fast Fragrance 4in1 200g,Charbhuja,Pooja,Agarbatti,🪔,199,199,,,yes
+p0091,Devbhakti Agarbatti Zipper 135g,Pitambari,Pooja,Agarbatti,🪔,0,0,"Mogra, Gulab, 7 in 1",,yes
+p0092,Wet Dhoop 80-100g,Charbhuja,Pooja,Dhoop,🕯️,70,70,,,yes
+p0093,Wet Dhoop Small,Charbhuja,Pooja,Dhoop,🕯️,15,15,,,yes
+p0094,Wet Dhoop Zipper 100g,Charbhuja,Pooja,Dhoop,🕯️,35,35,,,yes
+p0095,Dhoop Cone 100g,Charbhuja,Pooja,Dhoop,🕯️,79,79,,,yes
+p0096,Dry Cone,Charbhuja,Pooja,Dhoop,🕯️,15,15,,,yes
+p0097,Hawan Samagri,Charbhuja,Pooja,Dhoop,🕯️,0,0,"90g box, 200g, 500g, 1kg, 5kg",,yes
+p0098,Cotton Diya Batti,Charbhuja,Pooja,Dhoop,🕯️,15,15,,,yes
+p0099,Camphor,Charbhuja,Pooja,Dhoop,🕯️,0,0,,,yes
+p0100,Wipro LED Bulb,Wipro,Ghar ka saman,LED Bulb,💡,0,0,"3W, 5W, 7W, 9W, 14W",,yes
+p0101,Wipro 9W Emergency Bulb,Wipro,Ghar ka saman,LED Bulb,💡,0,0,Rechargeable,,yes
+p0102,Trubble Gum Rat Trap,PCI,Ghar ka saman,Pest Control,🪤,60,60,,,yes
+p0103,Trubble Gum Rat Trap Large,PCI,Ghar ka saman,Pest Control,🪤,120,120,,,yes
+p0104,Pest Seal Spray,PCI,Ghar ka saman,Pest Control,🪤,0,0,"200g, 500g",,yes
+p0105,Roban Rat Killer,PCI,Ghar ka saman,Pest Control,🪤,20,20,,,yes
+p0106,Glucovita Bolt Jar,Glucovita,Ghar ka saman,Candy,🍬,10,10,,,yes
