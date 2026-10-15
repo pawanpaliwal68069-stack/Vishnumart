@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vishnu Mart</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--card:#fff;--ink:#1d2140;--mute:#6c7088;--line:#e6e1d3;--brand:#243a8c;--onb:#fff;--gold:#f2b705;--ong:#1d2140;--green:#1f7a4d;--gbg:#dff3e7;--tile:#f0ebdc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11152b;--card:#1b2140;--ink:#f3efe2;--mute:#9a9fba;--line:#2c3358;--brand:#7f98ff;--onb:#0f1430;--green:#58c78d;--gbg:#173a2c;--tile:#262d52}}
+:root[data-theme="dark"]{--bg:#11152b;--card:#1b2140;--ink:#f3efe2;--mute:#9a9fba;--line:#2c3358;--brand:#7f98ff;--onb:#0f1430;--green:#58c78d;--gbg:#173a2c;--tile:#262d52}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--bg);color:var(--ink);font-family:'Hind',system-ui,sans-serif;font-size:16px;-webkit-tap-highlight-color:transparent}
+body{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:150px}
+button,a{font:inherit;cursor:pointer;border:0;color:inherit;background:none;text-decoration:none}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hide{display:none!important}
+header{background:var(--brand);color:var(--onb);padding:12px 16px 12px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.dl{font-size:12.5px;opacity:.85}.dt{font-family:'Yatra One',serif;font-size:24px;line-height:1.1}
+.ic{display:flex;gap:8px}.ic button{position:relative;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.18);font-size:19px}
+.ic i{position:absolute;top:-3px;right:-3px;background:var(--gold);color:var(--ong);font-style:normal;font-size:11.5px;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center}
+.addr{margin-top:6px;font-size:14px;text-align:left;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search{width:100%;margin-top:10px;padding:12px 16px;border:0;border-radius:99px;font:inherit;background:var(--card);color:var(--ink)}
+.tabs{display:flex;gap:22px;overflow-x:auto;padding:0 16px;background:var(--brand);scrollbar-width:none}
+.tabs button{flex:none;padding:8px 0 9px;color:var(--onb);opacity:.75;font-weight:600;font-size:14.5px;border-bottom:3px solid transparent}
+.tabs button.on{opacity:1;border-color:var(--gold)}
+.fd{margin:14px 16px 0;padding:10px 14px;border-radius:12px;background:var(--gbg);color:var(--green);font-weight:600;font-size:14.5px}
+.ban{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:14px 16px;scrollbar-width:none}
+.b{flex:none;width:82%;scroll-snap-align:center;border-radius:14px;padding:16px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between}
+.b h3{font-family:'Yatra One',serif;font-weight:400;font-size:22px;line-height:1.15}.b p{font-size:14px}
+.b1{background:var(--gold);color:#1d2140}.b2{background:#243a8c;color:#fff}.b3{background:#1f7a4d;color:#fff}
+.b button{align-self:flex-start;background:#fff;color:#1d2140;font-weight:700;padding:5px 14px;border-radius:99px;font-size:14px}
+h2{font-size:18px;font-weight:700;padding:8px 16px}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px 8px;padding:0 16px 8px}
+.cat{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12.5px;font-weight:600;text-align:center;line-height:1.2}
+.cat span{width:100%;aspect-ratio:1;border-radius:14px;background:var(--tile);display:grid;place-items:center;font-size:30px;border:2px solid transparent}
+.cat.on span{border-color:var(--brand)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}
+.p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column}
+.pt{height:80px;border-radius:8px;background:var(--tile);display:grid;place-items:center;font-size:40px;position:relative}
+.off{position:absolute;top:0;left:0;background:var(--green);color:#fff;font-size:11.5px;font-weight:700;padding:2px 7px;border-radius:8px 0 8px 0}
+.pn{font-weight:600;font-size:14px;line-height:1.25;margin-top:8px;min-height:35px}.pc{font-size:12px;color:var(--mute)}
+.pr{display:flex;align-items:baseline;gap:6px;margin:4px 0 6px}.rate{font-weight:700;font-size:17px}.mrp{font-size:12px;color:var(--mute);text-decoration:line-through}
+.sch{font-size:11.5px;font-weight:600;background:var(--gold);color:var(--ong);padding:1px 6px;border-radius:4px;margin-bottom:6px;align-self:flex-start}
+.add{margin-top:auto;border:1.5px solid var(--brand);color:var(--brand);font-weight:700;border-radius:8px;padding:6px}
+.step{margin-top:auto;display:flex;justify-content:space-between;align-items:center;background:var(--brand);color:var(--onb);border-radius:8px}
+.step button{width:38px;height:34px;font-size:20px;font-weight:700;color:var(--onb)}.step span{font-weight:700}
+.bar{position:fixed;left:50%;transform:translateX(-50%);width:calc(100% - 24px);max-width:456px;bottom:calc(64px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);border-radius:12px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:600;z-index:6}
+.bar em{font-style:normal;background:var(--gold);color:var(--ong);padding:6px 14px;border-radius:8px;font-weight:700}
+nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;background:var(--card);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom,0px);z-index:7}
+nav button{flex:1;padding:9px 0 7px;color:var(--mute);font-weight:600;font-size:12.5px}nav button b{display:block;font-size:20px;font-weight:400}nav button.on{color:var(--brand)}
+.sec{padding:16px}.back{font-weight:700;color:var(--brand);padding:4px 0 10px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}.box h4{margin-bottom:6px}
+.inp{width:100%;font:inherit;padding:10px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);margin-top:6px}
+.sum{display:flex;justify-content:space-between;padding:5px 0;font-size:15px}.sum s{color:var(--mute);margin-left:6px}
+.tot{font-weight:700;font-size:18px;border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.sav{display:flex;justify-content:space-between;margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--gbg);border:1.5px solid var(--green);color:var(--green);font-weight:700;font-size:17px}
+.paybar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;background:var(--card);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;z-index:8}
+.paybar>div{font-size:12.5px;color:var(--mute)}.paybar b{display:block;font-size:19px;color:var(--ink)}
+.pb{flex:1;padding:12px 6px;border-radius:10px;font-weight:700;font-size:15px;line-height:1.15}
+.pb.o{border:1.5px solid var(--brand);color:var(--brand)}.pb.f{background:var(--brand);color:var(--onb)}
+.cp{display:flex;justify-content:space-between;align-items:center;gap:10px}.cp b{font-size:17px;border:1.5px dashed var(--brand);color:var(--brand);padding:2px 10px;border-radius:6px}
+.cpb{border:1.5px solid var(--brand);color:var(--brand);font-weight:700;border-radius:8px;padding:6px 14px}.cpb.on{background:var(--brand);color:var(--onb)}
+.trk{border:1.5px solid var(--brand);border-radius:14px;background:var(--card);padding:14px;margin-top:12px}
+.eta{color:var(--green);font-weight:700;font-size:20px}
+.otp{margin:10px 0;text-align:center;background:var(--tile);border-radius:8px;padding:6px;font-size:15px}
+.dp{display:flex;gap:12px;align-items:center}.av{width:48px;height:48px;border-radius:10px;background:var(--tile);display:grid;place-items:center;font-size:26px}.dp>div:nth-child(2){flex:1}
+.call{width:42px;height:42px;border-radius:50%;background:var(--brand);display:grid;place-items:center;font-size:18px}
+.th{display:flex;gap:8px;overflow-x:auto;padding-top:8px}.th span{flex:none;width:48px;height:48px;border-radius:8px;background:var(--tile);display:grid;place-items:center;font-size:24px}
+.tk{display:flex;gap:12px;padding-bottom:10px;color:var(--mute);font-size:14.5px}.tk i{flex:none;width:20px;height:20px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font-style:normal;font-size:11px}
+.tk.d{color:var(--ink)}.tk.d i{background:var(--green);border-color:var(--green);color:#fff}
+.hint{font-size:13px;color:var(--mute);margin-top:8px}.empty{text-align:center;color:var(--mute);padding:48px 16px}
+.toast{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);background:var(--green);color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;z-index:20}
+.lbtn{display:block;width:100%;padding:14px;margin-top:14px;background:var(--gold);color:var(--ong);font-weight:700;border-radius:10px;font-size:17px}
+.link{color:var(--brand);font-weight:700;padding:6px 0}
+</style>
+</head>
+<body>
+<section id="login" class="hide sec" style="padding-top:56px"><div class="dt" style="color:var(--brand);font-size:34px">Vishnu Mart</div><p class="hint" style="font-size:15px">Vishnu Agency ke dukandaron ke liye. Dukan se hi order lagayein.</p>
+<div class="box"><div id="l1"><b>Dukan ka naam</b><input class="inp" id="ls" placeholder="Jaise: Sharma General Store"><div style="height:10px"></div><b>Mobile number</b><input class="inp" id="lm" type="tel" inputmode="numeric" maxlength="10" placeholder="10 digit number"><button class="lbtn" id="go1">OTP bhejein</button></div>
+<div id="l2" class="hide"><b>OTP daalein</b><input class="inp" id="lo2" type="tel" inputmode="numeric" maxlength="4" placeholder="1234"><button class="lbtn" id="go2">Login karein</button><p class="hint">Demo mein OTP: 1234</p></div></div></section>
+<div id="hd">
+  <header>
+    <div class="top"><div><div class="dl">Delivery</div><div class="dt">Aaj shaam tak</div></div>
+      <div class="ic"><button id="ob" aria-label="Mere order">📦</button><button id="cb" aria-label="Cart">🛒<i id="cc" class="hide"></i></button></div></div>
+    <button class="addr" id="ab">🏠 <b>Dukan:</b> <span id="at"></span> ▾</button>
+    <input class="inp hide" id="ai" placeholder="Dukan ka pura pata likhein">
+    <input class="search" id="q" placeholder="Ghee, masala, sabun, agarbatti khojein">
+  </header>
+  <div class="tabs" id="tabs"></div>
+</div>
+<div id="v-home"><div id="ht">
+  <div class="ban">
+    <div class="b b1"><div><h3>Ghee aur Tel par<br>bachat</h3><p>Gokul, Krishna, Saras, Oleev</p></div><button data-c="Ghee & Tel">Abhi kharidein</button></div>
+    <div class="b b2"><div><h3>Masale, chai<br>aur rozana saman</h3><p>Ramdev, Rungta's aur aur bhi</p></div><button data-c="Masale & Chai">Dekhein</button></div>
+    <div class="b b3"><div><h3>₹500 se upar<br>delivery free</h3><p>Cash ya online payment</p></div><button data-c="Sab">Shuru karein</button></div>
+  </div>
+  <h2>Categories</h2><div class="cg" id="hc"></div>
+</div>
+<h2 id="lt">Sabhi products</h2><div class="grid" id="grid"></div></div>
+<div id="v-cats" class="hide"></div>
+<div id="v-again" class="hide"></div>
+<div id="v-offers" class="hide sec"></div>
+<div id="v-cart" class="hide sec"></div>
+<div id="v-ord" class="hide sec"></div>
+<div class="bar hide" id="bar"><span id="bi"></span><em>Cart dekhein</em></div>
+<div class="paybar hide" id="pb"><div>To pay<b id="pt"></b></div><button class="pb o" data-pay="COD">Pay cash<br>on delivery</button><button class="pb f" data-pay="ONLINE">Pay online</button></div>
+<nav id="nav">
+  <button data-t="home" class="on"><b>🏠</b>Home</button><button data-t="cats"><b>▦</b>Categories</button>
+  <button data-t="again"><b>🔁</b>Buy again</button><button data-t="offers"><b>🏷️</b>Offers</button>
+</nav>
+<script>
+const WA="917014136886",PH="+917014136886"; // Vishnu Mart ka WhatsApp / delivery phone
+const G={"Ghee & Tel":[["Ghee","🧈"],["Edible Oil","🫗"]],"Masale & Chai":[["Masale","🌶️"],["Hing","🧂"],["Chai","🍵"],["Pasta","🍝"]],"Soap & Wash":[["Soap","🧼"],["Hand Wash","🧴"],["Detergent","🧺"],["Cleaners","🧽"],["Jhadu & Scrubber","🧹"]],"Personal Care":[["Hair Care","💆"],["Skin Care","🧴"],["Oral Care","🪥"],["Shaving","🪒"]],"Pooja":[["Agarbatti","🪔"],["Dhoop","🕯️"]],"Ghar ka saman":[["LED Bulb","💡"],["Pest Control","🪤"],["Candy","🍬"]]};
+const CP=[{c:"GHEE50",off:50,min:800,t:"₹50 off, ₹800 ya usse upar ke order par"},{c:"VISHNU100",off:100,min:1500,t:"₹100 off, ₹1500 ya usse upar ke order par"}];
+const T=(c,s,e,b,I)=>I.map(x=>[x[0],b,c,s,e,x[1]||0,x[1]||0,x[2]||""]);
+const P=[].concat(
+T("Ghee & Tel","Ghee","🧈","Gokul",[["Gokul Cow's Ghee",0,"Agmark, jar"]]),
+T("Ghee & Tel","Ghee","🧈","Krishna",[["Krishna Ghee",0,"Agmark, box"],["Krishna Premium Danedar Desi Ghee",0,"Box"]]),
+T("Ghee & Tel","Ghee","🧈","Saras",[["Saras Shuddh Ghee 1L",0,"Agmark, box"]]),
+T("Ghee & Tel","Ghee","🧈","Vastu",[["Vastu Cow Ghee",0,"Agmark, jar"]]),
+T("Ghee & Tel","Ghee","🧈","Amul",[["Amul Ghee",0,"Pouch"]]),
+T("Ghee & Tel","Edible Oil","🫗","Oleev",[["Oleev Active Multi-Source Oil 1L",0,"Pouch"],["Oleev Active Multi-Source Oil 5L",0,"Jar"],["Oleev Kitchen Olive Pomace Oil 1L",0,"Bottle"]]),
+T("Ghee & Tel","Edible Oil","🫗","Pitambari",[["SaptaShakti Sesame Oil",0,"200ml, 500ml, 1L"]]),
+T("Ghee & Tel","Edible Oil","🫗","Fortune",[["Fortune Oil",0,"Pack size batayein"]]),
+T("Ghee & Tel","Edible Oil","🫗","Mahakosh",[["Mahakosh Mustard Oil",0,"Pack size batayein"]]),
+T("Masale & Chai","Pasta","🍝","Oleev",[["Oleev Kitchen Pasta Penne 400g",0,""]]),
+T("Masale & Chai","Masale","🌶️","Ramdev",[["Ramdev Mirch Powder",0,"100g, 200g, 500g, 1kg, 5kg"],["Ramdev Dhaniya Powder",0,"100g, 200g, 500g, 1kg, 5kg"],["Ramdev Haldi Powder",0,"100g, 200g, 500g, 1kg, 5kg"],["Ramdev Achar Masala",0,"100g, 200g, 500g"],["Ramdev Red Gold Kashmiri Chilli",0,"50g, 100g"],["Ramdev Garam Masala",0,"100g, 200g, 500g"]]),
+T("Masale & Chai","Hing","🧂","Ramdev",[["Ramdev Strong Hing",0,"10g, 25g, 50g, 100g, 250g"],["Ramdev Hing Super",0,"10g, 25g, 50g, 100g, 250g"]]),
+T("Masale & Chai","Chai","🍵","Rungta's",[["Real Taste Masala Chai",0,"₹10, ₹20 pouch"],["Real Taste Elaichi Tea",0,"₹10, ₹20 pouch"],["Real Gold Tea",0,"250g, 500g, 1kg"],["Dhamaka Tea",0,"250g, 500g, 1kg"]]),
+T("Soap & Wash","Soap","🧼","Dyna",[["Dyna Premium Beauty Soap",0,"100g, 125g"]]),
+T("Soap & Wash","Soap","🧼","Wipro JO",[["JO Glycerine Soap",0,"125g x4, 100g x5, 48g x5, 36g x5, 55g, 25g"]]),
+T("Soap & Wash","Soap","🧼","Wipro Doy",[["Doy Soap",0,"125g x3"]]),
+T("Soap & Wash","Soap","🧼","Wipro Santoor",[["Santoor Soap Sandal & Turmeric",0,"52g, 75g, 100g x4, 150g x3"],["Santoor Aloe Fresh Soap",0,"100g x4"],["Santoor Sandal & Almond Milk Soap",0,"100g x4"]]),
+T("Soap & Wash","Hand Wash","🧴","Wipro Santoor",[["Santoor Handy Hand Wash",10,"Sachet"],["Santoor Hand Wash",0,"200ml (1+1)"],["Santoor Hand Wash Refill",0,"675ml pouch"]]),
+T("Soap & Wash","Detergent","🧺","Wipro",[["Safe Wash Woolens Liquid",0,"60g, 1kg pouch"],["Safe Wash Liquid Detergent 1kg",0,"Bottle + 700g Hand Wash free"],["Giffy Dishwash Gel",15,"Super value pack"]]),
+T("Soap & Wash","Detergent","🧺","Pitambari",[["Pitambari Dishwash Bar",0,"200g x3"],["Pitambari Shining Powder",0,"50g, 150g, 1kg"]]),
+T("Soap & Wash","Cleaners","🧽","Bellar",[["Bellar Toilet Cleaner 500ml",99,""],["Bellar Phenyl Yellow",45,""],["Bellar Phenyl White",30,""]]),
+T("Soap & Wash","Cleaners","🧽","Wipro",[["Max Kleen Floor Cleaner",0,"500ml, 1L"]]),
+T("Soap & Wash","Cleaners","🧽","Pitambari",[["Pitambari Drain Cleaner",0,"50g"],["Pitambari Sanit All Toilet Cleaner",0,"500ml"]]),
+T("Soap & Wash","Jhadu & Scrubber","🧹","Bellar",[["Bellar Gold Scrubber",15,"Steel"],["Seenk Jhadu",45,""],["Phool Jhadu Royal",75,""],["Phool Jhadu Advance",90,""],["Phool Jhadu Steel",90,""],["Phool Jhadu Ultra",95,""],["Phool Jhadu Smart",115,""],["Phool Jhadu Prime",120,""],["Bellar Wiper",80,""]]),
+T("Soap & Wash","Jhadu & Scrubber","🧹","Wipro Giffy",[["Giffy Steel Scrubber",15,""]]),
+T("Personal Care","Hair Care","💆","Pal Vaidik",[["Arnica Amla Herbal Shampoo",0,"300ml, 500ml, 1L"],["Neem Shikakai Shampoo",0,"300ml, 500ml, 1L"],["Amla Kesh Tel",0,"500ml, 1L"],["Chameli Kesh Tel",0,"35ml to 1L"],["Jasmine Hair Oil",0,"100ml, 200ml, 500ml"],["Almond Hair Oil",0,"500ml"],["Coconut Oil",0,"100ml, 200ml, 500ml"]]),
+T("Personal Care","Skin Care","🧴","Pal Vaidik",[["Honey & Almonds Body Lotion",0,"20g, 100g, 150g to 900g"],["Massage Cream",0,"16g to 800g"],["Petroleum Jelly",0,"25g to 500g"],["Lip Guard",0,"20ml"],["Glycerin",0,"50g, 100g, 200g"],["Gulab Jal",0,"60ml to 1L, plain/spray"],["Herbal Powder (Reetha, Amla, Triphala, Multani)",0,"150g"],["Talcum Powder",0,"100g"]]),
+T("Personal Care","Oral Care","🪥","Ajay",[["Ajay Toothbrush TB-101",22,""],["Ajay Toothbrush TB-104",11,""],["Ajay Baby Brush TB-105",18,""],["Ajay Baby Brush TB-103",20,""],["Ajay Toothbrush TB-107",20,""],["Ajay Toothbrush TB-108",25,""],["Ajay Toothbrush TB-109",40,""]]),
+T("Personal Care","Shaving","🪒","Ajay",[["Ajay Shaving Brush SB-231",40,""],["Ajay Shaving Brush SB-251",55,""]]),
+T("Personal Care","Shaving","🪒","Vi-John",[["Vi-John Shaving Cream",0,"30g, 125g"],["Splash After Shave Lotion",0,"50ml, 100ml"]]),
+T("Pooja","Agarbatti","🪔","Charbhuja",[["Charbhuja Agarbatti Box",25,""],["Charbhuja Agarbatti Pack",15,""],["Dry Sticks (10 sticks)",15,""],["Dry Sticks Jar 100g",79,""],["Agarbatti Box 70-90g",85,""],["Agarbatti Zipper 110-170g",85,""],["Agarbatti Zipper 300-350g",130,""],["Agarbatti Zipper 700g",260,""],["Fast Fragrance 4in1 200g",199,""]]),
+T("Pooja","Agarbatti","🪔","Pitambari",[["Devbhakti Agarbatti Zipper 135g",0,"Mogra, Gulab, 7 in 1"]]),
+T("Pooja","Dhoop","🕯️","Charbhuja",[["Wet Dhoop 80-100g",70,""],["Wet Dhoop Small",15,""],["Wet Dhoop Zipper 100g",35,""],["Dhoop Cone 100g",79,""],["Dry Cone",15,""],["Hawan Samagri",0,"90g box, 200g, 500g, 1kg, 5kg"],["Cotton Diya Batti",15,""],["Camphor",0,""]]),
+T("Ghar ka saman","LED Bulb","💡","Wipro",[["Wipro LED Bulb",0,"3W, 5W, 7W, 9W, 14W"],["Wipro 9W Emergency Bulb",0,"Rechargeable"]]),
+T("Ghar ka saman","Pest Control","🪤","PCI",[["Trubble Gum Rat Trap",60,""],["Trubble Gum Rat Trap Large",120,""],["Pest Seal Spray",0,"200g, 500g"],["Roban Rat Killer",20,""]]),
+T("Ghar ka saman","Candy","🍬","Glucovita",[["Glucovita Bolt Jar",10,""]])
+).map((a,i)=>({id:i,n:a[0],b:a[1],c:a[2],s:a[3],e:a[4],mrp:a[5],rate:a[6],o:a[7]}));
+let user=null,tmp=null;try{user=JSON.parse(localStorage.getItem("vm_u")||"null")}catch(e){}
+let lim=60,lk="";
+let cart={},cat="Sab",sub=null,tab="home",coupon=null,orders=[],addr="";
+try{orders=JSON.parse(localStorage.getItem("vm_o")||"[]");addr=localStorage.getItem("vm_a")||""}catch(e){}
+const $=s=>document.querySelector(s),inr=n=>"₹"+n.toLocaleString("en-IN");
+const toast=t=>{const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2200)};
+const L=()=>Object.keys(cart).map(i=>({p:P[i],q:cart[i]})),cnt=()=>L().reduce((s,l)=>s+l.q,0);
+function calc(){const r=L().reduce((s,l)=>s+l.p.rate*l.q,0),m=L().reduce((s,l)=>s+l.p.mrp*l.q,0),del=r>=500||!r?0:40;
+ const cd=coupon&&r>=coupon.min?coupon.off:0;return{r,m,pd:m-r,del,cd,tot:r+del-cd,sav:m-r+cd+(r>=500?40:0)}}
+$("#go1").onclick=()=>{const s=$("#ls").value.trim(),m=$("#lm").value.trim();if(!s){toast("Dukan ka naam likhein");return}if(!/^\d{10}$/.test(m)){toast("10 digit ka sahi number daalein");return}tmp={shop:s,mob:m};$("#l1").classList.add("hide");$("#l2").classList.remove("hide")};
+$("#go2").onclick=()=>{if($("#lo2").value!=="1234"){toast("OTP galat hai, dobara daalein");return}user=tmp;try{localStorage.setItem("vm_u",JSON.stringify(user))}catch(e){}go("home")};
+$("#ab").onclick=()=>{$("#ai").classList.toggle("hide");$("#ai").value=addr;$("#ai").focus()};
+$("#ai").onchange=()=>{addr=$("#ai").value.trim();try{localStorage.setItem("vm_a",addr)}catch(e){}$("#ai").classList.add("hide");draw()};
+$("#q").oninput=()=>{if(tab!=="home")go("home");else draw()};
+document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>go(b.dataset.t));
+$("#cb").onclick=$("#bar").onclick=()=>go("cart");$("#ob").onclick=()=>go("ord");
+document.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{cat=b.dataset.c;sub=null;draw()});
+document.querySelectorAll("[data-pay]").forEach(b=>b.onclick=()=>place(b.dataset.pay));
+function go(t){tab=t;draw();scrollTo(0,0)}
+function ctl(p){const q=cart[p.id]||0;return q?`<div class="step"><button data-m="${p.id}" aria-label="kam karein">−</button><span>${q}</span><button data-a="${p.id}" aria-label="badhayein">+</button></div>`:`<button class="add" data-a="${p.id}">Add</button>`}
+function bind(r){r.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{const i=+b.dataset.a;cart[i]=(cart[i]||0)+1;draw()});
+ r.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{const i=+b.dataset.m;cart[i]--;if(cart[i]<=0)delete cart[i];draw()})}
+const card=p=>`<div class="p"><div class="pt">${p.mrp>p.rate&&p.rate?`<span class="off">${Math.round((p.mrp-p.rate)/p.mrp*100)}% off</span>`:""}${p.e}</div><div class="pn">${p.n}</div><div class="pc">${p.b}${p.o?" · "+p.o:""}</div><div class="pr">${p.rate?`<span class="rate">${inr(p.rate)}</span>`:`<span class="rate" style="font-size:13.5px">Rate WhatsApp par</span>`}${p.mrp>p.rate&&p.rate?`<span class="mrp">${inr(p.mrp)}</span>`:""}</div>${ctl(p)}</div>`;
+const tiles=a=>a.map(x=>`<button class="cat ${sub===x[0]?"on":""}" data-s="${x[0]}" data-g="${x[2]}"><span>${x[1]}</span>${x[0]}</button>`).join("");
+function bindTiles(r){r.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{sub=b.dataset.s;cat=b.dataset.g;go("home")})}
+function home(){const q=$("#q").value.toLowerCase();
+ $("#tabs").innerHTML=["Sab",...Object.keys(G)].map(c=>`<button class="${c===cat?"on":""}" data-k="${c}">${c==="Sab"?"My Home":c}</button>`).join("");
+ $("#tabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{cat=b.dataset.k;sub=null;draw()});
+ $("#ht").classList.toggle("hide",!!q||cat!=="Sab"&&!!cat);
+ $("#hc").innerHTML=Object.keys(G).flatMap(g=>G[g].map(s=>[s[0],s[1],g])).slice(0,12).map(x=>`<button class="cat" data-s="${x[0]}" data-g="${x[2]}"><span>${x[1]}</span>${x[0]}</button>`).join("");bindTiles($("#hc"));
+ const l=P.filter(p=>(cat==="Sab"||p.c===cat)&&(!sub||p.s===sub)&&(p.n+p.b).toLowerCase().includes(q));
+ const key=cat+"|"+sub+"|"+q;if(key!==lk){lk=key;lim=60}
+ $("#lt").textContent=q?"Khoj ke natije":sub||(cat==="Sab"?"Sabhi products":cat);
+ $("#grid").innerHTML=l.length?l.slice(0,lim).map(card).join("")+(l.length>lim?`<button class="link" id="more" style="grid-column:1/3;padding:12px">Aur products dikhayein (${l.length-lim})</button>`:""):`<div class="empty" style="grid-column:1/3">Koi product nahi mila.<br>Dusra naam try karein.</div>`;bind($("#grid"));const mo=$("#more");if(mo)mo.onclick=()=>{lim+=60;draw()}}
+function cats(){$("#v-cats").innerHTML=Object.keys(G).map(g=>`<h2>${g}</h2><div class="cg">${tiles(G[g].map(s=>[s[0],s[1],g]))}</div>`).join("");
+ $("#v-cats").querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{sub=b.dataset.s;cat=b.dataset.g;go("home")})}
+function again(){const ids=[...new Set(orders.flatMap(o=>o.items.map(x=>x.i)))];
+ $("#v-again").innerHTML=`<h2>Dobara kharidein</h2>`+(ids.length?`<div class="grid">${ids.map(i=>card(P[i])).join("")}</div>`:`<div class="empty">Abhi koi purana order nahi.<br>Pehla order lagayein, phir yahan dikhega.</div>`);bind($("#v-again"))}
+function offers(){$("#v-offers").innerHTML=`<h2 style="padding:0 0 8px">Coupons</h2>`+CP.map(c=>`<div class="box"><div class="cp"><b>${c.c}</b><button class="cpb ${coupon&&coupon.c===c.c?"on":""}" data-cp="${c.c}">${coupon&&coupon.c===c.c?"Laga hua":"Lagayein"}</button></div><p class="hint">${c.t}</p></div>`).join("")+`<p class="hint">Coupon cart mein apne aap judta hai, agar order ki rakam poori ho.</p><button class="link" id="lo">Logout (${user.shop})</button>`;
+ $("#lo").onclick=()=>{user=null;try{localStorage.removeItem("vm_u")}catch(e){}draw()};
+ $("#v-offers").querySelectorAll("[data-cp]").forEach(b=>b.onclick=()=>{const c=CP.find(x=>x.c===b.dataset.cp);coupon=coupon&&coupon.c===c.c?null:c;toast(coupon?c.c+" laga diya":"Coupon hata diya");draw()})}
+function cartV(){const r=$("#v-cart"),l=L(),k=calc();
+ if(!l.length){r.innerHTML=`<button class="back" data-t2="home">← Wapas</button><div class="empty">Cart khali hai.<br>Home se products add karein.</div>`}
+ else r.innerHTML=`<button class="back" data-t2="home">← Checkout</button>`+(k.r>=500?`<div class="fd" style="margin:0 0 6px">🎉 Free delivery mil gayi</div>`:`<div class="fd" style="margin:0 0 6px;background:var(--tile);color:var(--ink)">${inr(500-k.r)} aur kharidein, delivery free ho jayegi</div>`)+
+ l.map(x=>`<div class="row"><div><div style="font-weight:600">${x.p.n}</div><div class="pc">${inr(x.p.rate)} x ${x.q} = ${inr(x.p.rate*x.q)}</div></div><div class="step" style="width:100px;margin:0;align-self:center"><button data-m="${x.p.id}">−</button><span>${x.q}</span><button data-a="${x.p.id}">+</button></div></div>`).join("")+
+ `<div class="box"><div class="row" style="border:0;padding:0"><b>🏠 Delivering to Dukan</b><button class="link" id="chg">Change</button></div><div class="pc" style="margin-top:4px">${addr||"Pata abhi nahi daala"}</div><input class="inp ${addr?"hide":""}" id="ca" placeholder="Dukan ka pura pata, shahar" value="${addr}"></div>
+ <div class="box"><h4>Payment details</h4><div class="sum"><span>MRP total</span><span>${inr(k.m)}</span></div><div class="sum"><span>Product discount</span><span style="color:var(--green)">-${inr(k.pd)}</span></div><div class="sum"><span>Delivery fee</span><span style="color:var(--green)">${k.del?inr(k.del):"Free"}${k.del?"":"<s>₹40</s>"}</span></div><div class="sum"><span>Coupon discount</span><span style="color:var(--green)">-${inr(k.cd)}</span></div><div class="sum tot"><span>Total</span><span>${inr(k.tot)}</span></div></div>
+ <div class="sav"><span>Aapki kul bachat</span><span>${inr(k.sav)}</span></div>${L().some(x=>!x.p.rate)?`<p class="hint">Jin items par rate nahi hai, unka rate order ke baad WhatsApp par bataya jayega.</p>`:""}${coupon&&!k.cd?`<p class="hint">${coupon.c} ke liye ${inr(coupon.min)} ka order chahiye.</p>`:""}`;
+ bind(r);r.querySelectorAll("[data-t2]").forEach(b=>b.onclick=()=>go("home"));
+ const ch=$("#chg");if(ch)ch.onclick=()=>{$("#ca").classList.remove("hide");$("#ca").focus()};
+ const ca=$("#ca");if(ca)ca.onchange=()=>{addr=ca.value.trim();try{localStorage.setItem("vm_a",addr)}catch(e){}draw()}}
+function place(pay){const ca=$("#ca");if(ca&&ca.value.trim())addr=ca.value.trim();
+ if(!addr){toast("Pehle delivery address likhein");const c=$("#ca");if(c){c.classList.remove("hide");c.focus()}return}
+ const l=L(),k=calc(),id="VM"+String(Date.now()).slice(-6);
+ orders.unshift({id,at:Date.now(),items:l.map(x=>({i:x.p.id,q:x.q})),t:k.tot,pay,addr,otp:String(Math.floor(100000+Math.random()*900000))});
+ try{localStorage.setItem("vm_o",JSON.stringify(orders));localStorage.setItem("vm_a",addr)}catch(e){}
+ const m=`*Naya order ${id}*\nDukan: ${user.shop} (${user.mob})\nPata: ${addr}\nPayment: ${pay==="COD"?"Cash on delivery":"Online"}\n\n`+l.map(x=>`${x.p.n} x ${x.q}`).join("\n")+`\n\n*Total: ${inr(k.tot)}*`;
+ cart={};toast("Order lag gaya: "+id);go("ord");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank")}
+function ordV(){const r=$("#v-ord");
+ r.innerHTML=`<button class="back" data-t2="home">← Mere order</button>`+(orders.length?orders.map((o,i)=>{const s=Math.min(3,Math.floor((Date.now()-o.at)/20000)),eta=[30,18,6,0][s];
+ const head=s===3?"Deliver ho gaya":s===2?`Arriving in ${eta} mins`:`Delivery mein ~${eta} mins`;
+ const sub=["Order mil gaya","Packing ho rahi hai","Order delivery ke liye nikla hai","Order deliver ho gaya"][s];
+ return `<div class="trk"><div class="eta">${head}</div><div>${sub}</div>${s>=2&&s<3?`<div class="otp">Delivery OTP: <b>${o.otp}</b></div>`:""}
+ <div class="dp" style="margin-top:10px"><div class="av">🛵</div><div><b>Ramesh Kumar</b><div class="pc">Delivery partner aapka order le kar aa raha hai.</div></div><a class="call" href="tel:${PH}" aria-label="Call">📞</a></div>
+ <div style="margin-top:12px"><b>Is order ke items (${o.items.reduce((a,x)=>a+x.q,0)})</b><div class="th">${o.items.map(x=>`<span>${P[x.i].e}</span>`).join("")}</div></div>
+ <div style="margin-top:12px">${["Order mil gaya","Packing","Raste mein","Deliver ho gaya"].map((t,j)=>`<div class="tk ${j<=s?"d":""}"><i>${j<=s?"✓":""}</i>${t}</div>`).join("")}</div>
+ <div class="row" style="border:0;padding:0"><span class="pc">${o.id} · ${o.pay==="COD"?"Cash on delivery":"Online"}</span><b>${inr(o.t)}</b></div><button class="link" data-r="${i}">Dobara order karein</button></div>`}).join("")+`<p class="hint">Demo mein tracking har 20 second mein aage badhti hai. Asli app mein ye aap admin se badlenge.</p>`:`<div class="empty">Abhi koi order nahi.<br>Pehla order home se lagayein.</div>`);
+ r.querySelectorAll("[data-t2]").forEach(b=>b.onclick=()=>go("home"));
+ r.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{cart={};orders[+b.dataset.r].items.forEach(x=>cart[x.i]=x.q);toast("Pichla order cart mein daal diya");go("cart")})}
+function draw(){if(!user){["hd","v-home","v-cats","v-again","v-offers","v-cart","v-ord","nav","bar","pb"].forEach(i=>$("#"+i).classList.add("hide"));$("#login").classList.remove("hide");return}$("#login").classList.add("hide");const n=cnt(),k=calc();
+ ["home","cats","again","offers","cart","ord"].forEach(v=>$("#v-"+v).classList.toggle("hide",v!==tab));
+ const top=["home","cats","again","offers"].includes(tab);
+ $("#hd").classList.toggle("hide",!top);$("#tabs").classList.toggle("hide",tab!=="home");
+ $("#nav").classList.toggle("hide",tab==="cart");
+ document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.t===tab));
+ $("#at").textContent=addr||"pata daalein";$("#cc").textContent=n;$("#cc").classList.toggle("hide",!n);
+ $("#bar").classList.toggle("hide",!n||tab==="cart"||tab==="ord");$("#bi").textContent=n+" item · "+inr(k.tot);
+ $("#pb").classList.toggle("hide",tab!=="cart"||!n);$("#pt").textContent=inr(k.tot);
+ if(tab==="home")home();else if(tab==="cats")cats();else if(tab==="again")again();else if(tab==="offers")offers();else if(tab==="cart")cartV();else ordV()}
+draw();setInterval(()=>{if(tab==="ord")ordV()},10000);
+</script>
+</body>
+</html>
